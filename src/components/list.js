@@ -12,8 +12,8 @@ export default class List extends React.Component {
             const imgData = canvas.toDataURL('image/png');
             const pdf = new jsPDF();
             pdf.addImage(imgData, 'JPEG', 0, 0);
-            // pdf.output('dataurlnewwindow');
-            pdf.save("download.pdf");
+            pdf.output('dataurlnewwindow');
+            //pdf.save("download.pdf");
           })
         ;
       }
